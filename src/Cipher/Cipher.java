@@ -42,6 +42,19 @@ public class Cipher {
         }
     }
 
+
+    //return the letter with an index between 0 - 25 of the shifted alphabet
+    protected char ShiftedAlphabet(int val)
+    {
+        try {
+            return Alphabet[val];
+        }
+        catch (Exception e)
+        {
+            return 0;
+        }
+    }
+
     //Debug
     protected void PrintAlpha()
     {
